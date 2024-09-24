@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Ultimo</title>
+
+        <!--This is a simple css code for styling the table, th and td-->
+        <style>
+            table,th,td 
+            {
+                border: 1px solid black;
+                border-collapse: collapse;
+                height: 25px;
+            }
+        </style>
+    </head>
+
+    <!--For setting image as background-->
+    <body style="background-image: url(abstract_pattern_design_background_2007.jpg);">
+        <h1>Reservation Form: </h1>
+
+        <!--The form will take the user to "action_page.php" after filling all of the input and clicking the Submit button-->
+        <form action="action_page.php">
+
+            <!--Labels will be put right next to the input and there will be different types of input-->
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" placeholder="Full Name">
+            <br>
+            <label for="email">Email Address:</label>
+            <input type="text" name="email" placeholder="Email Address">
+            <br>
+            <label for="date">Date/Time of Reservation:</label>
+            <input type="datetime-local" name="date">
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="number" name="phone" placeholder="Phone Number">
+            <br>
+            <input type="submit"><input type="reset">
+        </form>
+        <br>
+        <h1>Menu:</h1>
+
+        <!--this will make the table a little bit wider-->
+        <table style="width: 50%;">
+            <tr>
+                <th>ID</th>
+                <th>Food</th>
+                <th>Prize</th>
+            </tr>
+            <tr>
+                <!--it's to align all the text in the first column to the middle-->
+                <td align="middle">1</td>
+                <td>Lasagna</td>
+                <td>Rp75,000</td>
+            </tr>
+            <tr>
+                <td align="middle">2</td>
+                <td>Spaghetti</td>
+                <td>Rp90,000</td>
+            </tr>
+            <tr>
+                <td align="middle">3</td>
+                <td>Pizza</td>
+                <td>Rp105,000</td>
+            </tr>
+            <tr>
+                <td align="middle">4</td>
+                <td>Steak</td>
+                <td>Rp200,000</td>
+            </tr>
+            <tr>
+                <td align="middle">5</td>
+                <td>Lamb Chops</td>
+                <td>Rp150,000</td>
+            </tr>
+            <tr>
+                <td align="middle">6</td>
+                <td>Oyster</td>
+                <td>Rp90,000</td>
+            </tr>
+            <tr>
+                <!--it is to make the cell in the first column to span at least 3 row and the style is to adjust the font size-->
+                <th rowspan="3" style="font-size: 20px;">Exclusive Food</th>
+                <td>Beef Wellington</td>
+                <td>Rp385,000</td>
+            </tr>
+            <tr>
+                <td>Baked Salmon with Lemon and Dill</td>
+                <td>Rp200,000</td>
+            </tr>
+            <tr>
+                <td>Coq au Vin</td>
+                <td>Rp250,000</td>
+            </tr>
+        </table>
+    </body>
+</html>
